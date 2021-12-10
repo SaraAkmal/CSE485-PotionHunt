@@ -21,11 +21,12 @@ public class HeroKnight : MonoBehaviour
     private Sensor_HeroKnight m_wallSensorL2;
     private Sensor_HeroKnight m_wallSensorR1;
     private Sensor_HeroKnight m_wallSensorR2;
-
+    private playerStates playerState;
 
     // Use this for initialization
     private void Start()
     {
+        playerState = playerStates.Walking;
         m_animator = GetComponent<Animator>();
         m_body2d = GetComponent<Rigidbody2D>();
         m_groundSensor = transform.Find("GroundSensor").GetComponent<Sensor_HeroKnight>();
@@ -38,6 +39,10 @@ public class HeroKnight : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        if (m_body2d.velocity.y < -0.1 || m_body2d.velocity.y > 0.1)
+            playerState = playerStates.Falling;
+        else
+            playerState = playerStates.Walking;
         // Increase timer that controls attack combo
         m_timeSinceAttack += Time.deltaTime;
 
@@ -139,11 +144,14 @@ public class HeroKnight : MonoBehaviour
         //Jump
         else if (Input.GetKeyDown("space") && !m_rolling)
         {
-            m_animator.SetTrigger("Jump");
-            m_grounded = false;
-            m_animator.SetBool("Grounded", m_grounded);
-            m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_jumpForce);
-            m_groundSensor.Disable(0.2f);
+            if (playerState == playerStates.Walking)
+            {
+                m_animator.SetTrigger("Jump");
+                m_grounded = false;
+                m_animator.SetBool("Grounded", m_grounded);
+                m_body2d.velocity = new Vector2(m_body2d.velocity.x, m_jumpForce);
+                m_groundSensor.Disable(0.2f);
+            }
         }
 
         //Run
@@ -188,5 +196,11 @@ public class HeroKnight : MonoBehaviour
             // Turn arrow in correct direction
             dust.transform.localScale = new Vector3(m_facingDirection, 1, 1);
         }
+    }
+
+    private enum playerStates
+    {
+        Walking,
+        Falling
     }
 }
