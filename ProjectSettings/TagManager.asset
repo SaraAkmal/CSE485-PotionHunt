@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Shootable
+  - ManaSprite
+  - HealthSprite
+  - Potion
   layers:
   - Default
   - TransparentFX
