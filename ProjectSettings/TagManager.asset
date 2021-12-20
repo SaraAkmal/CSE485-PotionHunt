@@ -8,6 +8,7 @@ TagManager:
   - ManaSprite
   - HealthSprite
   - Potion
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -15,8 +16,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - Wall
+  - Ground
   - Lighting
   - Ground
   - Postprocessing

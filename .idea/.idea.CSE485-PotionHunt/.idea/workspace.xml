@@ -10,6 +10,8 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/ZombiSoft/TinyHealthSystem/HealthSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeroManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
@@ -17,6 +19,11 @@
       <option value="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/Demo/HeroKnight.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PotionScript.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/ZombiSoft/TinyHealthSystem/HealthSystem.cs" />
+      <option value="$PROJECT_DIR$/Assets/Bandits - Pixel Art/Demo/Bandit.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HeroManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="220yF6i2wENOqeXXO20Oyrm89jS" />
@@ -64,7 +71,9 @@
       <workItem from="1638988703216" duration="1622000" />
       <workItem from="1639073534847" duration="1707000" />
       <workItem from="1639144434191" duration="6296000" />
-      <workItem from="1639402685172" duration="4060000" />
+      <workItem from="1639402685172" duration="4641000" />
+      <workItem from="1639865605446" duration="1817000" />
+      <workItem from="1639998512543" duration="14305000" />
     </task>
     <servers />
   </component>
