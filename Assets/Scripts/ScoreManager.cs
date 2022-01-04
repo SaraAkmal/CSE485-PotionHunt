@@ -21,5 +21,29 @@ public class ScoreManager : MonoBehaviour
                 scoreText.text = "Potions: " + potionScore + "/4";
                 particleEffect.Play();
             }
+
+        if (other.gameObject.tag.Equals("Key"))
+            if (!pickups.Contains(other.gameObject))
+            {
+                pickups.Add(other.gameObject);
+                other.gameObject.SetActive(false);
+                other.gameObject.transform.SetParent(gameObject.transform);
+            }
+
+        if (other.gameObject.tag.Equals("Door"))
+            if (IsContainingKey(pickups))
+            {
+                print("OpenDoor");
+                Destroy(other.gameObject);
+            }
+    }
+
+    private bool IsContainingKey(List<GameObject> pickups)
+    {
+        for (var i = 0; i < pickups.Count; i++)
+            if (pickups[i].CompareTag("Key"))
+                return true;
+
+        return false;
     }
 }

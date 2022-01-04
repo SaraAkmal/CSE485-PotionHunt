@@ -9,6 +9,9 @@ TagManager:
   - HealthSprite
   - Potion
   - Enemy
+  - Door
+  - Key
+  - Poison
   layers:
   - Default
   - TransparentFX

@@ -18,12 +18,13 @@
       <option value="$PROJECT_DIR$/Assets/MetroidvaniaController/Scripts/Player/CameraFollow.cs" />
       <option value="$PROJECT_DIR$/Assets/Hero Knight - Pixel Art/Demo/HeroKnight.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/PotionScript.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyManager.cs" />
       <option value="$PROJECT_DIR$/Assets/ZombiSoft/TinyHealthSystem/HealthSystem.cs" />
       <option value="$PROJECT_DIR$/Assets/Bandits - Pixel Art/Demo/Bandit.cs" />
-      <option value="$PROJECT_DIR$/Assets/Scripts/HeroManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/ScoreManager.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/LoadSceneManager.cs" />
       <option value="$PROJECT_DIR$/Assets/Scripts/EnemyController.cs" />
+      <option value="$PROJECT_DIR$/Assets/Scripts/HeroManager.cs" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="220yF6i2wENOqeXXO20Oyrm89jS" />
@@ -73,7 +74,10 @@
       <workItem from="1639144434191" duration="6296000" />
       <workItem from="1639402685172" duration="4641000" />
       <workItem from="1639865605446" duration="1817000" />
-      <workItem from="1639998512543" duration="14305000" />
+      <workItem from="1639998512543" duration="14795000" />
+      <workItem from="1641069107339" duration="2494000" />
+      <workItem from="1641242788171" duration="4413000" />
+      <workItem from="1641305336333" duration="4810000" />
     </task>
     <servers />
   </component>
