@@ -28,6 +28,14 @@ public class LoadSceneManager : MonoBehaviour
             {
                 if (other.gameObject.tag.Equals("Player")) SceneManager.LoadScene("MainScene");
             }
+            else if (gameObject.name.Equals("UpperPathCollider"))
+                        {
+                            if (other.gameObject.tag.Equals("Player")) SceneManager.LoadScene("UpperPath");
+                        }
+            else if (gameObject.name.Equals("MazePathCollider"))
+            {
+                if (other.gameObject.tag.Equals("Player")) SceneManager.LoadScene("MazeScene");
+            }
         }
     }
 }
