@@ -78,7 +78,7 @@ public class HeroManager : MonoBehaviour
         while (isPoisned)
         {
             if (healthSystem.manaPoint <= 0)
-                healthSystem.TakeDamage(10);
+                healthSystem.TakeDamage(3);
 
             else
                 healthSystem.UseMana(2);
